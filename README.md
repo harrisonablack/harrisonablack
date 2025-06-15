@@ -1,4 +1,4 @@
-![](https://skillicons.dev/icons?i=apple,aws,java,react,gradle)
+![](https://skillicons.dev/icons?i=apple,neovim,java,gradle,mysql)
 
 # Hi, I'm Harrison
 
