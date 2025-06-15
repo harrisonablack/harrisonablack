@@ -27,7 +27,7 @@ public class Profile {
 }
 ```
 
-```bash
+```text
 ➜  harrisonablack git:(main) javac Profile.java
 ➜  harrisonablack git:(main) java Profile
 
