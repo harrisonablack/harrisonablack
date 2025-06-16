@@ -6,7 +6,7 @@
 public class Profile {
 	private String name;
 	private String discipline;
-	private university uni;
+	private University uni;
 
 	public Profile() {
 		this.name = "Harrison";
@@ -17,7 +17,7 @@ public class Profile {
 	@Override
 	public String toString() {
 		return "Hi, I'm " + this.name + ". I'm currently studying " 
-            + this.discipline + " at " + this.uni + ".";
+            + this.discipline + " at " + this.uni.toString() + ".";
 	}
 
 	public static void main(String[] args) {
