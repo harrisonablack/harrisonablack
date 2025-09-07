@@ -1,35 +1,41 @@
-![](https://skillicons.dev/icons?i=apple,neovim,java,gradle,mysql)
+![](https://skillicons.dev/icons?i=apple,neovim,cpp,java,gradle,mysql)
 
 # Hi, I'm Harrison
 
-```java
-public class Profile {
-	private String name;
-	private String discipline;
-	private University uni;
+```cpp
+#include <iostream>
+#include <string>
 
-	public Profile() {
-		this.name = "Harrison";
-		this.discipline = "Software Engineering";
-		this.uni = university.RMIT;
-	}
+class Profile {
+private:
+    std::string name;
+    std::string discipline;
+    std::string university;
 
-	@Override
-	public String toString() {
-		return "Hi, I'm " + this.name + ". I'm currently studying " 
-            + this.discipline + " at " + this.uni.toString() + ".";
-	}
+public:
+    Profile(const std::string& n = "Harrison",
+            const std::string& d = "Software Engineering",
+            const std::string& u = "RMIT")
+        : name(n), discipline(d), university(u) {}
 
-	public static void main(String[] args) {
-		Profile me = new Profile();
-		System.out.println(me.toString());
-	}
+    friend std::ostream& operator<<(std::ostream& os, const Profile& p) {
+        os << "Hi, I'm " << p.name
+           << ". I'm currently studying " << p.discipline
+           << " at " << p.university << ".";
+        return os;
+    }
+};
+
+int main() {
+    Profile me;
+    std::cout << me << std::endl;
+    return 0;
 }
 ```
 
 ```text
-➜  harrisonablack git:(main) javac Profile.java
-➜  harrisonablack git:(main) java Profile
+➜  harrisonablack git:(main) g++ Profile.cpp -o Profile
+➜  harrisonablack git:(main) ./Profile
 
 Hi, I'm Harrison. I'm currently studying Software Engineering at RMIT.
 ```
