@@ -2,4 +2,4 @@
 
 # Hi, I'm Harrison
 
-Im a current student, studying a Bachelors of Softwre Engineering at RMIT, Melbourne, Australia. I primarily have interest working with backend / lower level systems, primarily with experience in Java and CPP.
+Im a current student, studying a Bachelors of Softwre Engineering at RMIT, Melbourne, Australia. I primarily have interest working with backend / lower level systems, primarily Java and CPP.
